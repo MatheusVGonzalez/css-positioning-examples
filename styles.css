@@ -1,0 +1,157 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    nav {
+        padding: 32px 32px;
+        min-height: 80px;
+        background: #1f1f1f;
+    }
+
+    nav > a {
+        vertical-align: bottom;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    aside h1 {
+        margin-bottom: 80px;
+    }
+
+    nav img {
+        max-height: 48px;
+        background-color: white;
+    }
+
+    nav ul,
+    nav ul li,
+    .line,
+    .spacer {
+        display: inline-block;
+    }
+    ul li {
+        text-align: center; 
+    }
+
+    ul {
+        margin-bottom: 15px;
+    }
+    main   {
+        display: inline-block;
+        width: 70%;
+        vertical-align: top; 
+        height: 100%;
+        padding-top: 80px;   
+        padding-bottom: 370px; 
+    }
+    .footer-link a {
+        display: inline-block;
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
+
+    }
+    aside { 
+        display: inline-block;
+        width: 29.6%;
+        background-color: rgb(59, 59, 59);
+        vertical-align: top;    
+        padding-top: 80px;   
+        padding-bottom: 420px;
+        
+    }
+
+    .content-box {
+        display: inline-block;
+        width: 70%;
+        vertical-align: top;
+        margin-right: 10px;
+    }
+
+    footer {
+        background-color: #1f1f1f;
+        color: white;
+        text-align: center;
+        padding: 1%;
+    }
+    
+    #services-menu {
+        position: absolute;
+        top: 110%;
+
+    }
+
+    #services-menu a {
+        display: inline-block;
+
+    }
+
+    .dropdown {
+        position: relative;
+    }
+    
+    .spacer {
+        width: calc(100% - 132px - 276px - 100px);
+    }
+
+    .line {
+        width: calc(100% - 132px - 100px);
+        background-color: white;
+        height: 1px;
+    }
+
+    nav ul {
+        margin-bottom: 15px;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+
+    ul li {
+        height: 40px;
+        font-size: 25px;
+    }
+
+    #last-item {
+        margin-right: 0px;
+    }
+
+
+    nav ul li a:link,
+    nav ul li a:visited {
+        color: skyblue;
+    }
+
+    nav ul li a:hover {
+        color: lightgreen;
+    }
+
+    nav ul li a:active {
+        color: lightgreen;
+    }
+
+    aside a:link,
+    aside a:visited{
+        color: skyblue;
+}
+
+    aside a:hover {
+        color: white;
+    }
+
+    aside a:active {
+        color: lightgreen;
+    }
+
+    #current-page {
+        color: lightgreen;
+    }
