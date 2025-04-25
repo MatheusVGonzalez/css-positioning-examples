@@ -49,14 +49,14 @@
         vertical-align: top; 
         height: 100%;
         padding-top: 80px;   
-        padding-bottom: 370px; 
+        padding-bottom: 1000px; 
     }
     .footer-link a {
+        position: -webkit-sticky;
         display: inline-block;
         margin-right: 10px;
         color: white;
         text-decoration: none;
-
     }
     aside { 
         display: inline-block;
@@ -64,7 +64,7 @@
         background-color: rgb(59, 59, 59);
         vertical-align: top;    
         padding-top: 80px;   
-        padding-bottom: 420px;
+        padding-bottom: 600px;
         
     }
 
@@ -76,27 +76,61 @@
     }
 
     footer {
+        position: -webkit-sticky;
+        position: sticky;
+        
+        bottom: 0;
         background-color: #1f1f1f;
         color: white;
         text-align: center;
         padding: 1%;
+
     }
     
-    #services-menu {
-        position: absolute;
-        top: 110%;
 
+    #services-menu {
+        transition: opacity 0.5s, transform 0.30s;
+        position: absolute;
+        padding-left: 20px;
+        background-color: #252525;
+        top: 80%;
+        left: 0px;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-1vh);
     }
 
     #services-menu a {
-        display: inline-block;
-
+        padding-top: 7px;
+        display: block;
+        white-space: nowrap;
     }
 
     .dropdown {
         position: relative;
     }
-    
+
+    .up-arrow {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        max-width: 200px;
+        max-height: 200px;
+
+    }
+
+
+
+    .dropdown:hover #services-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+        
+    .spaacer{
+        height: calc(100% - 132px - 100px);
+    }
     .spacer {
         width: calc(100% - 132px - 276px - 100px);
     }
